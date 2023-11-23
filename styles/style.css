@@ -1,0 +1,47 @@
+.content {
+
+}
+.content--wrapper {
+
+}
+
+.article {
+    display: flex;
+    align-self: stretch;
+    gap: 1em;
+    
+}
+
+.article > * {
+    
+}
+
+.article::after{
+    content: "";
+    border: 1.5px solid black;
+    order: 1;
+    height: 60px;
+    align-self: center;
+}
+
+.article > header , .article > footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.article > header {
+    flex-shrink: 0;
+    align-self: flex-end;
+    text-align: center;
+}
+
+.article__body {
+    flex-grow: 1;
+}
+
+
+
+.article > footer {
+    order: 2;
+}
